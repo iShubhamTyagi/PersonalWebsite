@@ -26,9 +26,9 @@ function CenterTile() {
           <Switch>
             <Grow in>
               <div>
-                <Route exact path="/About" component={About} />
-                <Route exact path="/Contact" component={Contact} />
-                <Route exact path="/Experience" component={Experience} />
+                <About />
+                <Contact />
+                <Experience />
               </div>
             </Grow>
           </Switch>
