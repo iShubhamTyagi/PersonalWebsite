@@ -1,7 +1,6 @@
 import React from "react";
 import "./NavigationBar.css";
 import { Breadcrumbs, Link } from "@material-ui/core";
-import { useHistory } from "react-router-dom";
 
 export default function NavigationBar(props) {
   return (
