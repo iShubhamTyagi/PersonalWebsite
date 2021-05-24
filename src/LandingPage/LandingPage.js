@@ -5,7 +5,7 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Experience from "../Experience/Experience";
 import { Grow } from "@material-ui/core";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 import NavigationBar from "../NavigationBar/NavigationBar";
 
 export default function LandingPage() {
