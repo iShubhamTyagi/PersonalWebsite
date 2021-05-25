@@ -1,39 +1,40 @@
 import React from "react";
-import Particles from "../ParticlesBackground/ParticlesBackground";
 import "./LandingPage.css";
-import About from "../About/About";
+import "fullpage.js/vendors/scrolloverflow";
+import ReactFullpage from "@fullpage/react-fullpage";
 import Contact from "../Contact/Contact";
-import Experience from "../Experience/Experience";
-import { Grow } from "@material-ui/core";
-import { BrowserRouter as Router, Switch } from "react-router-dom";
-import NavigationBar from "../NavigationBar/NavigationBar";
+import About from "../About/About";
+import Home from "../Home/Home";
 
 export default function LandingPage() {
   return (
-    <div className="LandingPage">
-      <Particles />
-      <CenterTile className="centerTitle"></CenterTile>
-    </div>
-  );
-}
-
-function CenterTile() {
-  return (
-    <div className="center_all">
-      <div>
-        <NavigationBar />
-        <Router>
-          <Switch>
-            <Grow in>
-              <div>
-                <About />
-                <Contact />
-                <Experience />
-              </div>
-            </Grow>
-          </Switch>
-        </Router>
-      </div>
-    </div>
+    <ReactFullpage
+      className="FullPage"
+      licenseKey={""}
+      scrollingSpeed={400}
+      navigation={true}
+      css3={true}
+      fadingEffect={true}
+      navigationPosition="right"
+      showActiveTooltip={false}
+      navigationTooltips={["Home", "About", "Contact"]}
+      anchors={[]}
+      menu="#menu"
+      render={({ state, fullpageApi }) => {
+        return (
+          <div className="FullPage">
+            <div className="section">
+              <Home />
+            </div>
+            <div className="section">
+              <About />
+            </div>
+            <div className="section">
+              <Contact />
+            </div>
+          </div>
+        );
+      }}
+    />
   );
 }
