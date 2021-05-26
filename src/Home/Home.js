@@ -7,7 +7,7 @@ export default function About() {
       <div className="HomeBackground">
         <div className="Headline">
           <h1>Shubham Tyagi </h1>
-          <h2>Software developer, Scrum Master, Design Enthusiast</h2>
+          <h3>Software developer, Scrum Master, Design Enthusiast</h3>
         </div>
       </div>
     </div>

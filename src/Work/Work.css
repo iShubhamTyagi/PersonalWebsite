@@ -18,13 +18,18 @@
   ); */
   background-color: #01121f;
 }
+.WorkPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
-.AboutContents {
+.WorkContents {
   height: auto;
   margin-top: 5vh;
   margin-left: 2vw;
   margin-right: 2vw;
-  width: 90vw;
+
   max-width: 90vw;
   display: flex;
   flex-direction: column;
@@ -32,15 +37,10 @@
   align-content: center;
 }
 
-.AboutDetails {
-  margin-top: 20vh;
+.AccordionGroup {
+  margin-block: 5rem;
+  margin-inline: 1rem;
 }
-.EperienceYears {
-  font-size: 2em;
-  text-decoration: underline;
-  margin-bottom: 1rem;
-}
-
 @media screen and (min-width: 601px) {
   h1 {
     font-size: 80px;
@@ -51,9 +51,4 @@
   h1 {
     font-size: 50px;
   }
-}
-
-.EducationBlock {
-  margin: 2%;
-  padding: 2%;
 }

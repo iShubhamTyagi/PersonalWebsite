@@ -1,0 +1,55 @@
+.ContactCardArea {
+  height: 100vh;
+  width: 100vw;
+  padding: 2%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ContactCard {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  margin-block: 10em;
+  padding: 2rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: space-between;
+}
+
+.ContactCard-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 601px) {
+  .ContactCard {
+    width: 60%;
+    height: 50%;
+    margin-inline: 15%;
+  }
+  .MyName {
+    font-size: 72px;
+  }
+  .MyEmail {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ContactCard {
+    width: 70%;
+    height: 25%;
+  }
+  .MyName {
+    font-size: 36px;
+  }
+  .MyEmail {
+    font-size: 16px;
+  }
+}

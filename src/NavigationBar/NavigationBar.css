@@ -1,12 +1,11 @@
 #menu {
   position: fixed;
   top: 20px;
-  right: 20px;
+
   z-index: 70;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
-  letter-spacing: 1px;
-  font-size: 1.1em;
+  font-weight: bold;
   display: flex;
 }
 
@@ -18,7 +17,7 @@ ul {
 }
 
 #menu a {
-  color: var(--text-color);
+  color: white;
   padding: 0 0.3em 0 0.3em;
   margin: 0 1.1em 0 1.1em;
   text-decoration: none;
@@ -26,4 +25,16 @@ ul {
 
 #menu li.active a {
   border-bottom: 2px solid var(--primary);
+}
+
+@media screen and (min-width: 601px) {
+  #menu {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #menu {
+    font-size: 0.7em;
+  }
 }
