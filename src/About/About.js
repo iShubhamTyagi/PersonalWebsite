@@ -1,25 +1,28 @@
 import React from "react";
 import "./About.css";
 import { Typography, Grid, Card, Paper } from "@material-ui/core";
+import AboutLottie from "../Lottie/AboutLottie/AboutLottie";
 
 export default function About() {
   return (
     <div className="AboutPage">
       <div className="AboutBackground">
         <div className="AboutContents">
-          <h1>About</h1>
-          <h2>Education and Skills</h2>
+          <h1 className="Education Headers">Skills</h1>
+          <div className="AboutLottie">
+            <AboutLottie />
+          </div>
           <Grid className="AboutDetails" container spacing={3}>
             <Grid item xs={12} sm={6}>
               <div className="EducationBlock">
-                <h3>M.B.A. (Working Eecutives)</h3>
+                <h3 className="Headers">M.B.A. (Working Executive)</h3>
                 <h5>(2021-2022)</h5>
                 <h5>CGPA: 3.9 / 4</h5>
               </div>
             </Grid>
             <Grid item xs={12} sm={6}>
               <div className="EducationBlock">
-                <h3>B.E. - Computer Science Engineering</h3>
+                <h3 className="Headers">B.E. - Computer Science Engineering</h3>
                 <h5>(2013-2017)</h5>
                 <h5>CGPA: 7.49 / 10 </h5>
               </div>
@@ -41,9 +44,7 @@ export default function About() {
                 <h3>
                   React.js, JavaScript,
                   <br />
-                  TypeScript, Jest
-                  <br />
-                  React testing library
+                  TypeScript, <br /> Jest
                 </h3>
               </div>
             </Grid>

@@ -1,21 +1,9 @@
 :root {
-  --primary: #fcf8e8;
-  --text-color: #fcf8e8;
-  --secondary: #fcf8e8;
-  --tertiary: #fcf8e8;
-  --content-text: #fcf8e8;
-  --context-text-lighter: #fcf8e8;
   background: #01121f;
 }
 
 body {
   margin: 0;
-  font-family: "Roboto";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

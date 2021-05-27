@@ -21,6 +21,8 @@ ul {
   padding: 0 0.3em 0 0.3em;
   margin: 0 1.1em 0 1.1em;
   text-decoration: none;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
 }
 
 #menu li.active a {

@@ -1,10 +1,11 @@
 import React from "react";
 import "./Work.css";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import Typography from "@material-ui/core/Typography";
+import WorkLottie from "../Lottie/WorkLottie/WorkLottie";
 //import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const useStyles = makeStyles((theme) => ({
@@ -20,9 +21,19 @@ const useStyles = makeStyles((theme) => ({
     fontSize: theme.typography.pxToRem(15),
     color: theme.palette.text.secondary,
   },
+  Description: {
+    color: "red",
+  },
 }));
 
-export default function Work() {
+const styles = {
+  Description: {
+    color: "red",
+    alignContent: "left",
+  },
+};
+
+function Work() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -34,9 +45,9 @@ export default function Work() {
     <div className="WorkPage">
       <div className="WorkBackground">
         <div className="WorkContents">
-          <h1>Work</h1>
-          <h2>Projects</h2>
+          <h1 className="ProjectHeader">Projects</h1>
 
+          <WorkLottie />
           <div>
             <div className="AccordionGroup">
               <Accordion
@@ -57,7 +68,7 @@ export default function Work() {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography>
+                  <Typography className={classes.Description}>
                     Web Application to monitor and extract data and history of
                     tests executions on hearing instruments during production,
                     as per required scenarios for analytics, troubleshoot and
@@ -146,3 +157,5 @@ export default function Work() {
     </div>
   );
 }
+
+export default withStyles(styles)(Work);
