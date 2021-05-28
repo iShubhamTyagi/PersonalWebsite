@@ -50,6 +50,17 @@ h3 {
   margin-bottom: 1em;
 }
 
+.fas {
+  color: white;
+  opacity: 0.6;
+  font-size: 3rem;
+  cursor: pointer;
+  margin-left: 10%;
+}
+.Resume {
+  font-family: "Alex Brush";
+}
+
 @media screen and (min-width: 601px) {
   h1 {
     font-size: 80px;
@@ -58,7 +69,7 @@ h3 {
     font-size: 36px;
   }
   h3 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .WhyMePoints {
     margin-left: 10%;
@@ -79,12 +90,15 @@ h3 {
     font-size: 30px;
   }
   h3 {
-    font-size: 16px;
+    font-size: 12px;
   }
   .WhyMeContents {
     flex-direction: column;
   }
   .IndividualPoint {
     margin-bottom: 1em;
+  }
+  .download {
+    margin-left: 40%;
   }
 }

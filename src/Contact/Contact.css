@@ -26,10 +26,27 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.ContactName {
+  margin-top: -20%;
+  font-family: "Alex Brush";
+}
 
 h2 {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: bold;
+}
+
+.fab {
+  color: White;
+  cursor: pointer;
+}
+
+.icons-social {
+  display: flex;
+  justify-content: start;
+}
+.icons-social a {
+  margin: 5px;
 }
 
 @media screen and (min-width: 601px) {
@@ -38,11 +55,14 @@ h2 {
     height: 50%;
     margin-inline: 15%;
   }
-  .MyName {
+  .ContactName {
     font-size: 72px;
   }
   .MyEmail {
     font-size: 42px;
+  }
+  .icons-social a {
+    font-size: 5em;
   }
 }
 
@@ -51,10 +71,13 @@ h2 {
     width: 70%;
     height: 25%;
   }
-  .MyName {
+  .ContactName {
     font-size: 36px;
   }
   .MyEmail {
     font-size: 16px;
+  }
+  .icons-social a {
+    font-size: 3em;
   }
 }

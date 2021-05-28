@@ -2,13 +2,21 @@ import React from "react";
 import "./About.css";
 import { Typography, Grid, Card, Paper } from "@material-ui/core";
 import AboutLottie from "../Lottie/AboutLottie/AboutLottie";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
     <div className="AboutPage">
       <div className="AboutBackground">
         <div className="AboutContents">
-          <h1 className="Education Headers">Skills</h1>
+          <motion.h1
+            initial={{ y: "100vh" }}
+            animate={{ y: "0" }}
+            transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+            className="Education Headers"
+          >
+            Skills
+          </motion.h1>
           <div className="AboutLottie">
             <AboutLottie />
           </div>

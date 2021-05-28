@@ -21,14 +21,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: theme.typography.pxToRem(15),
     color: theme.palette.text.secondary,
   },
-  Description: {
-    color: "red",
-  },
 }));
 
 const styles = {
   Description: {
-    color: "red",
     alignContent: "left",
   },
 };

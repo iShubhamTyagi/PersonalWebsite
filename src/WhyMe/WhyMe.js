@@ -1,9 +1,20 @@
 import React from "react";
 import "./WhyMe.css";
-import { Typography, Grid, Card, Paper } from "@material-ui/core";
+import { Button } from "@material-ui/core";
+import { motion } from "framer-motion";
 import WhyMeLottie from "../Lottie/WhyMeLottie/WhyMeLottie";
+import Resume from "../WhyMe/ShubhamTyagi_Web_Developer.pdf";
 
 export default function WhyMe() {
+  const downloadResume = () => {
+    var link = document.createElement("a");
+    link.href = Resume;
+    link.style = "visibility:hidden";
+    link.download = "Shubham_Tyagi_Web_Developer" + ".pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className="WhyMePage">
       <div className="WhyMeBackground">
@@ -27,19 +38,29 @@ export default function WhyMe() {
               <h3>
                 I'm good at organizing:
                 <ul>
-                  <h3> Myself</h3>
-                  <h3>My Team</h3>
+                  <h3>&ensp;➡ Myself</h3>
+                  <h3>&ensp;➡ My Team</h3>
                   <h3>
-                    Events (from surprise Birthday Parties to Data Collection
-                    Event for Google Japan (Find details in Resume) )
+                    &ensp;➡ Events :from surprise birthday parties to <br />
+                    data collection event for Google Japan (Find details in
+                    Resume)
                   </h3>
                 </ul>
               </h3>
             </div>
             <div className="IndividualPoint">
               <h2>I make them look good:</h2>
-              <h3>Websites, recruiters and my supervisors.</h3>
+              <h3>websites, recruiters and my supervisors.</h3>
             </div>
+            <motion.div className="download">
+              <motion.Button
+                transition={{}}
+                onClick={downloadResume}
+                variant="contained"
+              >
+                Resume
+              </motion.Button>
+            </motion.div>
           </div>
         </div>
       </div>

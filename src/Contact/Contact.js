@@ -9,10 +9,17 @@ export default function Contact() {
       <div className="ContactCard">
         <div className="ContactCard-info">
           <h1 className="MyName">Shubham Tyagi </h1>
-
           <h2 className="MyEmail">ishubhamtyagi2021@gmail.com</h2>
+          <div className="icons-social">
+            <a href="https://github.com/iShubhamTyagi">
+              <i className="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shubham-tyagi-937a1b147">
+              <i className="fab fa-linkedin"></i>
+            </a>
+          </div>
         </div>
-        <ContactLottie />
+        {/* <ContactLottie /> */}
       </div>
     </div>
   );

@@ -44,6 +44,7 @@
 }
 .MyName {
   font-family: "Alex Brush";
+  text-shadow: "0px 0px 8px rgb(255,255,255)";
 }
 .MyIntro {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -65,7 +66,7 @@
   }
   .Intro {
     width: 40vw;
-    text-align: right;
+    text-align: justify;
     word-wrap: normal;
     flex-wrap: wrap;
     color: white;
@@ -84,7 +85,7 @@
   }
   .Intro {
     width: 80vw;
-    margin-top: 80vh;
+    margin-top: 75vh;
     margin-left: 10vw;
     text-align: center;
     word-wrap: normal;
