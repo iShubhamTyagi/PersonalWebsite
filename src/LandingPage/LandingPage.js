@@ -18,7 +18,7 @@ export default function LandingPage() {
       css3={true}
       fadingEffect={true}
       navigationPosition="right"
-      showActiveTooltip={false}
+      showActiveTooltip={true}
       navigationTooltips={["Home", "About", "Work", "Why Me?", "Contact"]}
       anchors={[]}
       menu="#menu"

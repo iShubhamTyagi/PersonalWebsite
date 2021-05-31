@@ -11,10 +11,13 @@ export default function Contact() {
           <h1 className="MyName">Shubham Tyagi </h1>
           <h2 className="MyEmail">ishubhamtyagi2021@gmail.com</h2>
           <div className="icons-social">
-            <a href="https://github.com/iShubhamTyagi">
+            <a href="https://github.com/iShubhamTyagi" target="_blank">
               <i className="fab fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/shubham-tyagi-937a1b147">
+            <a
+              href="https://www.linkedin.com/in/shubham-tyagi-937a1b147"
+              target="_blank"
+            >
               <i className="fab fa-linkedin"></i>
             </a>
           </div>

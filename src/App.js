@@ -5,7 +5,7 @@ import NavigationBar from "./NavigationBar/NavigationBar";
 function App() {
   return (
     <div className="App">
-      <NavigationBar />
+      {/* <NavigationBar /> */}
       <LandingPage />
     </div>
   );

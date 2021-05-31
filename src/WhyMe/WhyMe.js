@@ -42,8 +42,7 @@ export default function WhyMe() {
                   <h3>&ensp;➡ My Team</h3>
                   <h3>
                     &ensp;➡ Events :from surprise birthday parties to <br />
-                    data collection event for Google Japan (Find details in
-                    Resume)
+                    data collection event for Google Japan
                   </h3>
                 </ul>
               </h3>
@@ -53,13 +52,9 @@ export default function WhyMe() {
               <h3>websites, recruiters and my supervisors.</h3>
             </div>
             <motion.div className="download">
-              <motion.Button
-                transition={{}}
-                onClick={downloadResume}
-                variant="contained"
-              >
+              <Button onClick={downloadResume} variant="contained">
                 Resume
-              </motion.Button>
+              </Button>
             </motion.div>
           </div>
         </div>

@@ -15,7 +15,7 @@ export default function NavigationBar(props) {
         <li data-menuanchor="Work">
           <a>Work</a>
         </li>
-        <li data-menuanchor="Why Me?">
+        <li data-menuanchor="WhyMe?">
           <a>Why Me?</a>
         </li>
         <li data-menuanchor="Contact">

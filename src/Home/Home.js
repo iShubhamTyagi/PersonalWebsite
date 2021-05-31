@@ -55,11 +55,12 @@ export default function About() {
         className="Intro"
       >
         <h3>
-          Started from desktops but now I'm here.
+          Hi! I'm Shubham
           <br />
-          I like to make my websites, elegant,
-          <br /> my team, more efficient
-          <br /> and my coffee stronger.
+          I'm a web developer with <br /> experience of 3 years and 10 months.
+          <br />
+          I'm a servant leader to an agile team of 5.
+          <br /> I'm passionate about Web Design
         </h3>
       </motion.div>
     </div>

@@ -66,13 +66,14 @@
   }
   .Intro {
     width: 40vw;
-    text-align: justify;
+    text-align: right;
     word-wrap: normal;
     flex-wrap: wrap;
     color: white;
     display: flex;
     justify-content: flex-end;
     margin-left: 50rem;
+    margin-top: 20rem;
   }
 }
 

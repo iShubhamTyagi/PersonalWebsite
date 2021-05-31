@@ -25,14 +25,12 @@ export default function About() {
               <div className="EducationBlock">
                 <h3 className="Headers">M.B.A. (Working Executive)</h3>
                 <h5>(2021-2022)</h5>
-                <h5>CGPA: 3.9 / 4</h5>
               </div>
             </Grid>
             <Grid item xs={12} sm={6}>
               <div className="EducationBlock">
                 <h3 className="Headers">B.E. - Computer Science Engineering</h3>
                 <h5>(2013-2017)</h5>
-                <h5>CGPA: 7.49 / 10 </h5>
               </div>
             </Grid>
             <Grid item xs={6} sm={3}>
@@ -63,7 +61,7 @@ export default function About() {
                 <h3>
                   SQL
                   <br />
-                  Mongo DB
+                  MongoDB
                   <br />
                   Entity Framework Core
                 </h3>
